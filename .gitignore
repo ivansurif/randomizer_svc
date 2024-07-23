@@ -1,0 +1,4 @@
+.python-version
+.ropeproject/
+__pycache__/
+*.sw[op]

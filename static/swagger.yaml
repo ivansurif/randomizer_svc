@@ -1,0 +1,35 @@
+swagger: "2.0"
+info:
+  description: "A simple service which provides random functionality"
+  version: "0.0.1"
+  title: "Random"
+schemes:
+- "http"
+paths:
+  /random/{seed}/choice:
+    get:
+      summary: "Get a random value from a list of values"
+      parameters:
+      - in: "path"
+        name: "seed"
+        description: |
+          The seed to use for the random generator. If this value is 'default' then a random seed is used for each request
+        required: true
+        type: "string"
+      - in: "query"
+        name: "value"
+        description: "The list of values to choose from"
+        required: true
+        type: "array"
+        items:
+          type: "string"
+      responses:
+        "200":
+          description: "Chosen value from list of input values"
+          schema:
+            type: "object"
+            properties:
+              value:
+                type: "string"
+        "400":
+          description: "Invalid input"

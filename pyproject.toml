@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "random"
+version = "0.0.1"
+description = "A service which which provides random functionality via a RESTful API"
+readme = "README.markdown"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
