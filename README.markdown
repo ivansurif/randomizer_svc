@@ -4,7 +4,7 @@ This service provides a RESTful API which provides random functionality. It is w
 The [Swagger Spec](static/swagger.yaml) defines the interface of the service.
 
 ## Running Locally
-The service can be run as a Docker as a Python process.
+The service can be run as a Python process.
 
 Install requirements:
 ```
